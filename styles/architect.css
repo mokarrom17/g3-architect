@@ -15,6 +15,7 @@
     font-size: 20px;
     margin: 32px;
 }
+
 .primary-text-color {
     color: #727272;
 }
@@ -56,7 +57,7 @@ nav li a {
 
 /* Banner section */
 .banner-content {
-   max-width: 800px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
@@ -68,74 +69,115 @@ nav li a {
 }
 
 
-.banner img{
+.banner img {
     width: 100%;
 }
+
 /* Main style */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* Team style */
-.team-container{
+.team-container {
     display: flex;
     align-items: center;
 }
-.team-img{
+
+.team-img {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.team-content{
+
+.team-content {
     gap: 25px;
     padding-left: 70px;
     padding-right: 70px;
 }
-.team-title{
+
+.team-title {
     font-size: 2.9rem;
 
 }
-.team-title  #quick{
+
+.team-title #quick {
     font-weight: 500;
 }
- .team-title #our{
+
+.team-title #our {
     color: #131313;
     font-weight: 700;
 }
-.team-title #feature{
+
+.team-title #feature {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* Facts section */
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 50px 60px;
+}
 
+.facts-card-container .card-stats {
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-title {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
 
 
 
 /* responsive media query */
 /* Mobile devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav , .team-container{
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
-    .team-img{
+
+    .team-img {
         grid-template-columns: 1fr;
     }
-    .team-content{
+
+    .team-content {
         gap: 25px;
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
 /* Medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-   header{
-    padding: 50px;
-   }
-    nav , .team-container{
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
 }
