@@ -9,14 +9,16 @@
 
 .btn-primary {
     border-radius: 8px;
+    color: #FFF;
     background: #FF900E;
-    width: 180px;
-    height: 64px;
+    padding: 20px 25px;
+    font-size: 20px;
+    margin: 32px;
 }
 
 header {
     background-color: rgba(255, 144, 55, 0.10);
-    padding: 150px 244px;
+    padding: 50px 244px;
 }
 
 .nav-title {
@@ -37,7 +39,7 @@ nav>ul {
 
 nav li {
     list-style: none;
-    margin: 30px;
+    margin: 20px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -49,7 +51,7 @@ nav li a {
 
 /* Banner section */
 .banner-content {
-    width: 800px;
+   max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
@@ -62,4 +64,27 @@ nav li a {
 
 .banner-description {
     color: #727272;
+}
+.banner img{
+    width: 100%;
+}
+
+/* responsive media query */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* Medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+   header{
+    padding: 50px;
+   }
+    nav{
+        flex-direction: column;
+    }
 }
